@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing...</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-warp">
+      <form class="sign-in-form" action="/Login" method="POST">
+        <h2 class="form-title">登录</h2>
+        <input name="username" placeholder="用户名" />
+        <input type="password" name="password" placeholder="密码" />
+        <input id="login" class="submit-btn" type="submit" value="立即登录">
+      </form>
+      <form class="sign-up-form" action="/Register" method="POST">
+        <h2 class="form-title">注册</h2>
+        <input name="username" placeholder="用户名" />
+        <input name="password" type="password" placeholder="密码" />
+        <input name="phoneNum" id="phoneNum" type="text" placeholder="手机号码">
+        <input name="pinCode" id="pinCode" type="text" placeholder="请输入验证码">
+        <div class="pin-input">
+          <button id="getPIN" type="button" class="pin-button">获取</button>
+        </div>
+        <input id="register" class="submit-btn" type="submit" value="立即注册">
+      </form>
+    </div>
+    <div class="desc-warp">
+      <div class="desc-warp-item sign-up-desc">
+        <div class="content">
+          <button id="sign-up-btn">注册</button>
+        </div>
+        <img src="./static/img/man.svg" alt="">
+      </div>
+      <div class="desc-warp-item sign-in-desc">
+        <div class="content">
+          <button id="sign-in-btn">登录</button>
+        </div>
+        <img src="./static/img/woman.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="./static/js/main.js"></script>
+</body>
+
+</html>
